@@ -114,25 +114,3 @@ with torch.no_grad():
     print(f'accuracy = {acc:.4f}')
     print(y_predicted)
     print(y_predicted_cls)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Data Split (80/20)
-# Construction of the Neural Network
-# Training
-# Evaluation of Model
-# Evaluation Metrics
-# Fine-tune and iterations
-##### Second Stage
