@@ -10,7 +10,7 @@ from torchvision import datasets, transforms
 from ucimlrepo import fetch_ucirepo, list_available_datasets
 import torch
 
-'''
+''' 
 KNN for imaging, math proposal and understanding (done)
 Contact the Hospital Professionals for treatment model (based on the same algorithm)
 Add more Layers and Neurons to the current model (done)
