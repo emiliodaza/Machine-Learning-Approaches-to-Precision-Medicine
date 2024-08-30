@@ -22,7 +22,7 @@ device = torch.device("cpu") # Commands were the PyTorch operations will be perf
 class SimpleCNN(nn.Module): # SimpleCNN inherits from the parent class nn.Module so that it can use its relevant methods
     def __init__(self): # self refers to the instance of the call for example "a" is an instance of the class if a = SimpleCNN()
         super(SimpleCNN, self).__init__() #super(SimpleCNN, self).__init__() establishes the order in which Python will process the call until finding the __init__() method inside of the parent class nn.Module
-        self.conv1 = nn.Conv2d(1, 16, 3) # 1 input channel (because we are in grayscale just one color channel), 16 output channels, and kernel size = 3.
+        self.conv1 = nn.Conv2d(1, 16, 3) # 1 input channel (because we are in grayscale just one color channel: one way of describing the input data), 16 output channels, and kernel size = 3.
         self.batch_norm1 = nn.BatchNorm2d(16) # Batch normalization is performed
         self.pool = nn.MaxPool2d(2, 1) # Max-pooling layer with kernel size of 2 and stride (how long is the horizontal and vertical step when overlapping matrices) of 1
         self.conv2 = nn.Conv2d(16, 16, 3) # Second Convolutional Layer with 16 input channels (from previous output channels max-pooled), 16 output channels, and kernel size = 3
